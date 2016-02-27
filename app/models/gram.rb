@@ -1,4 +1,4 @@
 class Gram < ActiveRecord::Base
-	validates_presence_of :title, :content
+	validates_presence_of :title, :content, message: "not found"
 
 end

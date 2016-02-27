@@ -1,0 +1,16 @@
+<% @grams.each do |gram| %>
+	<div>
+		<div>
+			<div>Me</div>
+			<div><%= link_to gram.created_at, gram %></div>
+			<div><%= link_to 'X marks delete', gram, method: :delete %></div>
+		</div>
+		<div>
+			<div><%= gram.title %></div>
+			<div><%= gram.content %></div>
+			<div><%= gram.country_code %></div>
+		</div>
+	</div>
+
+	<hr>	
+<% end %>
