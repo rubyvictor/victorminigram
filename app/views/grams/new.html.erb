@@ -18,7 +18,7 @@
 	<%= f.text_area :content %>
 </div><div>
 	<%= f.label :country_code %>
-	<%= f.text_field :country_code %>
+	<%= f.country_select :country_code, include_blank: true, priority_countries: ['SG', 'MY'] %>
 </div>
 <div>
 	<%= f.submit %>
