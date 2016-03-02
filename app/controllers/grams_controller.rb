@@ -12,7 +12,8 @@ class GramsController <ApplicationController
 		#strong parameters
 
 		if @gram.save
-		redirect_to @gram
+			flash[:notice] = 'Gram created!'
+			redirect_to @gram
 		else
 			render :new
 		end

@@ -1,9 +1,11 @@
+<%= link_to "New Gram", new_gram_path %>
+
 <% @grams.each do |gram| %>
 	<div>
-		<div>
-			<div>Me</div>
-			<div><%= link_to gram.created_at, gram %></div>
-			<div><%= link_to 'X marks delete', gram, method: :delete %></div>
+	<div>
+	<div>Me</div>
+	<div><%= link_to("#{time_ago_in_words(gram.created_at)} ago", gram) %></div>
+	<div><%= link_to 'X', gram, method: :delete %></div>
 		</div>
 		<div>
 			<div><%= gram.title %></div>
