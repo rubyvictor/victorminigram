@@ -12,7 +12,7 @@
           <div class='row'>
             <div class='col-sm-6'>
               <%= link_to gram.user.name, gram.user %>
-            	<span class='js-user-email'>
+            	<span class='js-user-email-<%= gram.user.id %>'>
             		<%= link_to icon('envelope'), gram.user, remote: true %>
             	</span>
             </div>
