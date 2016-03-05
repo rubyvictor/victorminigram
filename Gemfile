@@ -53,3 +53,5 @@ gem 'kaminari'
 gem 'carrierwave'
 gem 'cloudinary'
 
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
