@@ -9,6 +9,17 @@ class ImageUploader < CarrierWave::Uploader::Base
   version :standard do
     cloudinary_transformation width: 600, height: 600, crop: :pad, background: 'black'
   end
+
+  version :cropped do
+    cloudinary_transformation(
+      transformation:
+        [
+          { crop: :crop, gravity: :custom },
+          { width: 600, height: 600, crop: :fill },#this is a chained transformation. Crop first, then fill to parameters 600 x 600
+        ]
+    )
+  end
+
   # Choose what kind of storage to use for this uploader:
   #storage :file
   # storage :fog
