@@ -1,19 +1,19 @@
 ---
 development:
-  cloud_name: dw8sniwdq
-  api_key: '667473494284631'
-  api_secret: SA3qzZ8F1KURbGRmnJQfg-gq6u8
+  cloud_name: <%= ENV['dw8sniwdq'] %>
+  api_key: <%= ENV['667473494284631'] %>
+  api_secret: <%= ENV['SA3qzZ8F1KURbGRmnJQfg-gq6u8'] %>
   enhance_image_tag: true
   static_image_support: false
 production:
-  cloud_name: dw8sniwdq
-  api_key: '667473494284631'
-  api_secret: SA3qzZ8F1KURbGRmnJQfg-gq6u8
+  cloud_name: <%= ENV['dw8sniwdq'] %>
+  api_key: <%= ENV['667473494284631'] %>
+  api_secret: <%= ENV['SA3qzZ8F1KURbGRmnJQfg-gq6u8'] %>
   enhance_image_tag: true
   static_image_support: true
 test:
-  cloud_name: dw8sniwdq
-  api_key: '667473494284631'
-  api_secret: SA3qzZ8F1KURbGRmnJQfg-gq6u8
+  cloud_name: <%= ENV['dw8sniwdq'] %>
+  api_key: <%= ENV['667473494284631'] %>
+  api_secret: <%= ENV['SA3qzZ8F1KURbGRmnJQfg-gq6u8'] %>
   enhance_image_tag: true
   static_image_support: false
