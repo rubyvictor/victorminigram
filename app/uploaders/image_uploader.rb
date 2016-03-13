@@ -20,8 +20,8 @@ class ImageUploader < CarrierWave::Uploader::Base
     )
   end
 
-  version :eyes do
-    cloudinary_transformation width: 200, height: 80, crop: :thumb, gravity: :eyes
+  version :adv_eyes do
+    cloudinary_transformation width: 200, height: 80, crop: :thumb, gravity: :adv_eyes
   end
   # Choose what kind of storage to use for this uploader:
   #storage :file
