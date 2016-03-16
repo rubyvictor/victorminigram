@@ -17,7 +17,7 @@ class GramsController <ApplicationController
 
 
     if @gram.save
-      redirect_to @gram, notice: 'You have successfully grammed!'
+      redirect_to @gram, notice: 'You have successfully pixelized!'
     else
       render :new
     end
