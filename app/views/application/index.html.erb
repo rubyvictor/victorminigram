@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <title>Viktorious</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("http://res.cloudinary.com/dw8sniwdq/image/upload/v1459227502/SG_hi5tfv.jpg");
+      background-size: cover;
+      background-position: top;
+      color: white;
+      font-family: Roboto Condensed, sans-serif;
+    }
+    p {
+      font-size: 40px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: #dc0e19;
+      color: white;
+    }
+    @media (max-width: 500px) {
+    p {
+      font-size: 20px;
+      line-height:24px;
+      color: white;
+      font-weight:;
+    }
+    body {
+      background-size: cover;
+      background-position: relative;
+      background-repeat: no-repeat;
+    }
+    img {
+      max-width: 30%;
+      height: auto;
+    }
+
+    }
+  </style>
+</head>
+<body>
+  <img src="http://res.cloudinary.com/dw8sniwdq/image/upload/c_thumb,g_face,h_200,r_max,w_200/a_0/v1459229220/ViktoriousLee_thtfxt.png">
+  <p>Hi! I'm Victor, a startup founder from Singapore.
+  <br> I made a simple web app to pixelate your face in a photo.
+  <br> Look for my contact there :) </p>
+  
+  <form action="http://victorminigram.herokuapp.com/" method="get">
+    <input type="text" name="Nickname" required placeholder="Hello! What's your name?">
+    <input type="submit" value="Try Pixelate Now"
+          name="Submit" id="frm1_submit:"/>
+  </form>
+</body>
