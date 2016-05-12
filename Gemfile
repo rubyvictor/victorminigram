@@ -56,7 +56,7 @@ gem 'cloudinary'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 
-ruby '2.3.0'
+ruby '2.3.1'
 
 gem 'puma'
 gem 'rails_12factor', group: :production
